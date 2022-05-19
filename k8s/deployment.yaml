@@ -31,4 +31,4 @@ spec:
         - name: Vmess_Path
           value: "/vmoppt"
         - name: Share_Path
-          value: "$Share_Path"
+          value: "/share233"
