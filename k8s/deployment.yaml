@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ray
+  name: you
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ray
+      app: you
   template:
     metadata:
       labels:
-        app: ray
+        app: you
     spec:
       containers:
-      - image: okteto.dev/ray:latest
-        name: ray
+      - image: okteto.dev/you:latest
+        name: you
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "$ProxySite"
+          value: "icook.tu"
         - name: Vless_UUID
-          value: "$Vless_UUID"
+          value: "099fff14-c3c7-4a0c-9e8a-8e3194961c0f"
         - name: Vless_Path
-          value: "$Vless_Path"
+          value: "/vldvfpo"
         - name: Vmess_UUID
-          value: "$Vmess_UUID"
+          value: "099fff14-c3c7-4a0c-9e8a-8e3194961c0f"
         - name: Vmess_Path
-          value: "$Vmess_Path"
+          value: "/vmoppt"
         - name: Share_Path
           value: "$Share_Path"
